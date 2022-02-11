@@ -9,7 +9,7 @@ import { useNuxtApp } from '#app';
 
 const { ssrContext } = useNuxtApp();
 
-const { data, error } = await useAsyncData<Category>('test', () =>
+const { data, error } = await useAsyncData('test', () =>
   $fetch('http://jsonplaceholder.typicode.com/404')
 );
 
